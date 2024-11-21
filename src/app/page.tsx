@@ -56,48 +56,45 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <main className="flex flex-wrap flex-col w-full justify-center min-h-screen items-start md:items-center">
-      <section className="flex items-center">
-        <div className="w-[380px]">
-          <h1 className="text-6xl font-bold">Dot Dager.</h1>
-          <h2 className="text-2xl font-semibold">
-            Content creator. Developer. Guitarrist. Cat, pickles, and mystic falopita lover.
-          </h2>
+    <main className="flex w-2/3 justify-center mx-auto items-center mt-32">
+      <div className="w-[380px]">
+        <h1 className="text-6xl font-bold">Dot Dager.</h1>
+        <h2 className="text-2xl font-semibold">
+          Content creator. Developer. Guitarrist. Cat, pickles, and mystic falopita lover.
+        </h2>
 
-          <div className="flex flex-wrap ">
-            {
-              socialLinks.map(item => (
-                <Link
-                  key={item.link}
-                  className="hover:underline text-sm flex items-center gap-1 bg-gray-900 px-2 py-1 m-1 rounded-md w-fit"
-                  href={item.link}
-                  passHref
-                >
-                  <Image
-                    src={item.icon}
-                    alt={`${item.label}`}
-                    width={24}
-                    height={24}
-                    priority
-                  />
-                  {item.label}
-                </Link>
-              ))
-            }
-          </div>
-
+        <div className="flex flex-wrap ">
+          {
+            socialLinks.map(item => (
+              <Link
+                key={item.link}
+                className="hover:bg-purple-950 text-sm flex items-center gap-1 bg-purple-800 px-2 py-1 m-1 rounded-md w-fit"
+                href={item.link}
+                passHref
+              >
+                <Image
+                  src={item.icon}
+                  alt={`${item.label}`}
+                  width={24}
+                  height={24}
+                  priority
+                />
+                {item.label}
+              </Link>
+            ))
+          }
         </div>
-        <Image
-          className="rounded-sm"
-          src="/DagerHome.webp"
-          alt="Dot Dager"
-          width={380}
-          height={380}
-          priority
-        />
-      </section>
 
-      <section></section>
+      </div>
+      <Image
+        className="rounded-sm"
+        src="/DagerHome.webp"
+        alt="Dot Dager"
+        width={380}
+        height={380}
+        priority
+      />
+
     </main>
   );
 }
