@@ -41,3 +41,22 @@ Best, Mariano/Dot Dager.
 ```
 
 Send to -->  portafoliosdesarrollador@gmail.com
+
+
+## Interpretacion
+
+Quien?
+Dot Dager
+
+Programador
+creador de contenido que le gusta:
+- programar
+- filosofia
+- gatos
+- guitarras
+- pepinos
+- trav...
+- no vendo nada, hago todo por placer
+
+color violeta
+#fc2ae3

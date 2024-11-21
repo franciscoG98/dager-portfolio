@@ -9,11 +9,11 @@ function Navbar() {
       </Link>
 
       <div className="flex gap-8">
-        <Link href='/my-story'>
-          My Story
-        </Link>
         <Link href='/about'>
           About
+        </Link>
+        <Link href='/my-story'>
+          My Story
         </Link>
         <Link href='/lumberjack'>
           Lumber Jack

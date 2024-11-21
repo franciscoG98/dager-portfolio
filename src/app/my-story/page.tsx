@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function MyStory() {
   return (
     <main className="flex flex-col w-2/3 mx-auto mb-8">
-      <h1 className="text-6xl font-bold self-center my-4">The story of Dot Dager</h1>
+      <h1 className="text-4xl font-bold self-center my-4">The story of Dot Dager</h1>
 
       <section className='mt-4 flex justify-center items-center'>
         <Image
