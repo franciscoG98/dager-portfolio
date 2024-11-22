@@ -3,11 +3,6 @@ import Link from "next/link";
 
 const socialLinks = [
   {
-    label: 'YT - Dot Dager (main)',
-    link: 'https://www.youtube.com/@DotDager',
-    icon: '/icons/youtube.svg',
-  },
-  {
     label: 'Instagram',
     link: 'https://www.instagram.com/dager.32',
     icon: '/icons/instagram.svg',
@@ -18,11 +13,6 @@ const socialLinks = [
     icon: '/icons/tiktok.svg',
   },
   {
-    label: 'YT - Live clips',
-    link: 'https://www.youtube.com/@DagerLive',
-    icon: '/icons/youtube.svg',
-  },
-  {
     label: 'Discord',
     link: 'https://www.discord.gg/4NFk6TamAB',
     icon: '/icons/discord.svg',
@@ -31,11 +21,6 @@ const socialLinks = [
     label: 'Github',
     link: 'https://www.github.com/MarianoVilla',
     icon: '/icons/github.svg',
-  },
-  {
-    label: 'YT - Music',
-    link: 'https://www.youtube.com/c/DagerMusic',
-    icon: '/icons/youtube.svg',
   },
   {
     label: 'Twitch',
@@ -53,25 +38,37 @@ const socialLinks = [
     icon: '/icons/twitterx.svg',
   },
   {
-    label: 'YT - DagerClips',
+    label: 'Dot Dager (main)',
+    link: 'https://www.youtube.com/@DotDager',
+    icon: '/icons/youtube.svg',
+  },
+  {
+    label: 'Live clips',
+    link: 'https://www.youtube.com/@DagerLive',
+    icon: '/icons/youtube.svg',
+  },
+  {
+    label: 'Music',
+    link: 'https://www.youtube.com/c/DagerMusic',
+    icon: '/icons/youtube.svg',
+  },
+  {
+    label: 'DagerClips',
     link: 'https://www.youtube.com/@DagerClips',
     icon: '/icons/youtube.svg',
   },
   {
-    label: 'YT - El Antro de Dager',
+    label: 'El Antro de Dager',
     link: 'https://www.youtube.com/c/DagerXIV',
     icon: '/icons/youtube.svg',
   }
 ]
 
-
-// @fix: orden home links
-
 export default function Home() {
   return (
     <main className="flex w-2/3 justify-center mx-auto items-center mt-32">
       <div className="w-[380px]">
-        <h1 className="text-6xl font-bold">Dot Dager</h1>
+        <h1 className="text-6xl font-bold text-purple-600">Dot Dager</h1>
         <h2 className="text-2xl font-semibold">
           Content creator. Developer. Guitarist. Cat, pickles, and trav.. lover.
         </h2>
@@ -81,7 +78,7 @@ export default function Home() {
             socialLinks.map(item => (
               <Link
                 key={item.link}
-                className="hover:bg-purple-950 text-sm flex items-center gap-1 bg-purple-800 px-2 py-1 m-1 rounded-md w-fit"
+                className="font-semibold text-black text-sm flex items-center gap-1 bg-purple-600 hover:bg-purple-700 px-3 py-1 m-1 rounded-md w-fit"
                 href={item.link}
                 passHref
               >

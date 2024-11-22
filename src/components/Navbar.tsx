@@ -1,8 +1,14 @@
+'use client'
+
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import { useSelectedLayoutSegment } from 'next/navigation'
 
 function Navbar() {
+
+  const segment = useSelectedLayoutSegment()
+
   return (
     <nav className='border-purple-700 border-2 w-2/3 p-2 rounded-md flex mx-auto mt-4 items-center justify-between'>
       <Link href='/' className='flex gap-2 items-center font-semibold hover:underline'>
@@ -19,14 +25,23 @@ function Navbar() {
         </span>
       </Link>
 
-      <div className="flex gap-8">
-        <Link href='/about'>
+      <div className="flex gap-6">
+        <Link
+          className={`text-lg focus-visible:border-purple-700 hover:text-purple-700 ${'/' + segment === '/about' ? 'underline' : ''}`}
+          href='/about'
+        >
           About
         </Link>
-        <Link href='/my-story'>
+        <Link
+          href='/my-story'
+          className={`text-lg focus-visible:border-purple-700 hover:text-purple-700 ${'/' + segment === '/my-story' ? 'underline' : ''}`}
+        >
           My Story
         </Link>
-        <Link href='/lumberjack'>
+        <Link
+          href='/lumberjack'
+          className={`text-lg focus-visible:border-purple-700 hover:text-purple-700 ${'/' + segment === '/lumberjack' ? 'underline' : ''}`}
+        >
           Lumber Jack
         </Link>
       </div>
