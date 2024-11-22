@@ -5,22 +5,22 @@ import React from 'react'
 export default function page() {
   return (
     <main className="flex flex-col w-2/3 mx-auto mb-8 items-center justify-center">
-      <h1 className='text-4xl font-semibold mt-8'>About</h1>
+      <h1 className='text-4xl font-semibold my-8'>About</h1>
 
-      <p className='w-96 text-xl m-3'>
+      <p className='w-[520px] text-xl mx-4 mb-8'>
         I have different passions beside coding. I&apos;m mainly a tech content creator but my expertice is not limited to that.
       </p>
 
       <article className='flex flex-wrap justify-center gap-4'>
         {/* music */}
         <section className='border border-purple-700 rounded sm pb-4'>
-          <h2 className='text-2xl font-semibold my-8 text-center'>Music</h2>
-          <div className='flex mb-4 px-2'>
+          <h2 className='text-2xl font-semibold mt-8 mb-4 text-center'>Music</h2>
+          <div className='flex mb-4 pl-2 items-center'>
             <p className='w-[180px] p-2'>
               I&apos;m a great guitarist, my favourite genre is metal, but when I have 1 or 2 drinks on, I&apos;m Chaqueño Palavecino greatest fear.
             </p>
             <Image
-              className="rounded-sm"
+              className="rounded-sm w-[200px] h-[200px]"
               src="/dager_guitarra.webp"
               alt="Dot Dager playing guitar as a master"
               width={200}
@@ -53,18 +53,17 @@ export default function page() {
               <span>Spotify</span>
             </Link>
           </div>
-
         </section>
 
         {/* filosophy - movies */}
         <section className='border border-purple-700 rounded sm pb-4'>
-          <h2 className='text-2xl font-semibold my-8 text-center'>Film / Philosophy</h2>
-          <div className='flex mb-4 px-2'>
+          <h2 className='text-2xl font-semibold mt-8 mb-4 text-center'>Film / Philosophy</h2>
+          <div className='flex mb-4 pl-2 items-center'>
             <p className='w-[180px] p-2'>
               On this channel I talk about movies, series and what inner thoughts they generate in me. (I also have a video touching myself)
             </p>
             <Image
-              className="rounded-sm"
+              className="rounded-sm w-[200px] h-[200px]"
               src="/dager_touching.webp"
               alt="Dot Dager touching himself"
               width={200}
@@ -91,31 +90,62 @@ export default function page() {
 
         {/* cucumbers */}
         <section className='border border-purple-700 rounded sm pb-4'>
-          <h2 className='text-2xl font-semibold my-8 text-center'>Cucumbers</h2>
-          <div className='flex mb-4 px-2'>
+          <h2 className='text-2xl font-semibold mt-8 mb-4 text-center'>Cucumbers</h2>
+          <div className='flex mb-4 pl-2 items-center'>
             <p className='w-[180px] p-2 text-sm'>
               I have a weird obssesion with cucumbers. When someone ask me what animal I&apos;d like to be, I always say a cucumber, or better yet, a flying cucumber. I think that&apos;s why I was rejected in my first intervews. Now I just answer I&apos;d like to be a cat.
             </p>
             <Image
-              className="rounded-sm"
-              src="/pepino.webp"
+              className="rounded-sm w-[200px] h-[200px]"
+              src="/dager_loves-pepinos.webp"
               alt="Cucumber"
               width={200}
               height={200}
               priority
             />
           </div>
+
+          <p className='text-center'>In fact, I create content about cucumbers</p>
+          <div className='flex gap-2 justify-center'>
+            <Link className='flex hover:underline' href={'https://www.reddit.com/r/Cucumbers/'} passHref>
+              <Image
+                src="/icons/reddit.svg"
+                alt="reddit"
+                width={24}
+                height={24}
+                priority
+              />
+              <span>Cucumbers subReddit</span>
+            </Link>
+
+            <Link className='flex hover:underline' href={'https://www.reddit.com/r/1500isplenty/comments/1eb9dyv/i_love_cucumbers/'} passHref>
+              <Image
+                src="/icons/reddit.svg"
+                alt="reddit"
+                width={24}
+                height={24}
+                priority
+              />
+              <span>Reddit Viral Post</span>
+            </Link>
+          </div>
         </section>
 
         {/* Cats */}
         <section className='border border-purple-700 rounded sm pb-4'>
-          <h2 className='text-2xl font-semibold my-8 text-center'>Cats</h2>
-          <div className='flex mb-4 px-2 items-center'>
-            <p className='w-[180px] p-2'>
+          <h2 className='text-2xl font-semibold mt-8 mb-4 text-center'>Cats</h2>
+          <div className='flex mb-4 pl-2 items-center'>
+            <div className='w-[180px] p-2'>
               I have a cat. He is my alibi.
-            </p>
+              <h3 className='text-xl mt-4 font-semibold'>About my cat</h3>
+              <ul className='mt-2'>
+                <li>Name: Wordpress</li>
+                <li>Favourite meal: cucumbers</li>
+                <li>Race: Cat</li>
+              </ul>
+            </div>
             <Image
-              className="rounded-sm"
+              className="rounded-sm w-[200px] h-[200px]"
               src="/dager_gato.webp"
               alt="Dot Daget cat"
               width={200}
@@ -123,6 +153,7 @@ export default function page() {
               priority
             />
           </div>
+
         </section>
       </article>
     </main>
