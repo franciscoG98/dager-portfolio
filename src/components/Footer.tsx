@@ -36,7 +36,7 @@ export default function Footer() {
       <section className='flex w-fit mx-auto gap-4 mt-2'>
         {
           footerLinks.map(i => (
-            <Link href={i.link} className='relative group'>
+            <Link key={i.label} href={i.link} className='relative group'>
               <Image
                 className="rounded-full"
                 src={i.icon}
