@@ -66,19 +66,28 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <main className="flex w-2/3 justify-center mx-auto items-center mt-32">
-      <div className="w-[380px]">
-        <h1 className="text-6xl font-bold text-purple-600">Dot Dager</h1>
-        <h2 className="text-2xl font-semibold">
+    <main className="flex w-2/3 flex-col lg:flex-row justify-center mx-auto mb-24 items-center mt-12 lg:mt-32">
+      <div className="w-full mx-4 lg:w-1/2">
+        <h1 className="text-5xl text-center lg:text-left lg:text-6xl font-bold text-purple-600">Dot Dager</h1>
+        <h2 className="text-xl lg:text-2xl font-semibold">
           Content creator. Developer. Guitarist. Cat, pickles, and trav.. lover.
         </h2>
 
-        <div className="flex flex-wrap ">
+        <Image
+          className="rounded-sm lg:hidden my-4 mx-auto"
+          src="/DagerHome.webp"
+          alt="Dot Dager"
+          width={380}
+          height={380}
+          priority
+        />
+
+        <div className="flex flex-wrap w-full">
           {
             socialLinks.map(item => (
               <Link
                 key={item.link}
-                className="font-semibold text-black text-sm flex items-center gap-1 bg-purple-600 hover:bg-purple-700 px-3 py-1 m-1 rounded-md w-fit"
+                className="font-semibold text-black text-sm flex items-center gap-1 bg-purple-600 hover:bg-purple-700 px-3 py-1 m-1 rounded-lg w-fit"
                 href={item.link}
                 passHref
               >
@@ -95,10 +104,10 @@ export default function Home() {
             ))
           }
         </div>
-
       </div>
+
       <Image
-        className="rounded-sm"
+        className="rounded-sm hidden lg:flex"
         src="/DagerHome.webp"
         alt="Dot Dager"
         width={380}

@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function MyStory() {
   return (
-    <main className="flex flex-col w-2/3 mx-auto mb-8">
-      <h1 className="text-4xl font-bold self-center my-4">The story of Dot Dager</h1>
+    <main className="flex flex-col w-full mx:2 md:w-2/3 md:mx-auto mb-24">
+      <h1 className="text-4xl font-bold text-center self-center my-4">The story of Dot Dager</h1>
 
       <section className='mt-4 flex justify-center items-center'>
         <Image

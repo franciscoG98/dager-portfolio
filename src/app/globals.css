@@ -11,6 +11,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  cursor: url('/picklerick_mouse.png'), auto;
 }
 
 @media (prefers-color-scheme: dark) {
