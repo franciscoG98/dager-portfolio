@@ -10,7 +10,7 @@ function Navbar() {
   const segment = useSelectedLayoutSegment()
 
   return (
-    <nav className='border-purple-700 border-2 w-2/3 p-2 rounded-md flex mx-auto mt-4 items-center justify-between'>
+    <nav className='border-purple-700 md:border-2 border-b-2 md:w-2/3 p-2 md:rounded-md flex mx-auto md:mt-4 items-center justify-around md:justify-between'>
       <Link href='/' className='flex gap-2 items-center font-semibold hover:underline'>
         <Image
           className="rounded-full"
@@ -20,27 +20,27 @@ function Navbar() {
           height={50}
           priority
         />
-        <span className='text-2xl'>
+        <span className='hidden text-2xl md:flex'>
           Dot Dager
         </span>
       </Link>
 
-      <div className="flex gap-6">
+      <div className="flex gap-4 md:gap-6">
         <Link
-          className={`text-lg focus-visible:border-purple-700 hover:text-purple-700 ${'/' + segment === '/about' ? 'underline' : ''}`}
+          className={`text-lg focus-visible:border-purple-700 hover:underline whitespace-nowrap ${'/' + segment === '/about' ? 'text-purple-700' : ''}`}
           href='/about'
         >
           About
         </Link>
         <Link
           href='/my-story'
-          className={`text-lg focus-visible:border-purple-700 hover:text-purple-700 ${'/' + segment === '/my-story' ? 'underline' : ''}`}
+          className={`text-lg focus-visible:border-purple-700 hover:underline whitespace-nowrap ${'/' + segment === '/my-story' ? 'text-purple-700' : ''}`}
         >
           My Story
         </Link>
         <Link
           href='/lumberjack'
-          className={`text-lg focus-visible:border-purple-700 hover:text-purple-700 ${'/' + segment === '/lumberjack' ? 'underline' : ''}`}
+          className={`text-lg focus-visible:border-purple-700 hover:underline whitespace-nowrap ${'/' + segment === '/lumberjack' ? 'text-purple-700' : ''}`}
         >
           Lumber Jack
         </Link>

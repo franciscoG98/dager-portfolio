@@ -32,7 +32,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className='border-purple-700 border-t-2 mt-32 p-3'>
+    <footer className='border-purple-700 border-t-2 w-full fixed bottom-0 p-3 bg-inherit'>
       <section className='flex w-fit mx-auto gap-4 mt-2'>
         {
           footerLinks.map(i => (
